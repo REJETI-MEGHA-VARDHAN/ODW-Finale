@@ -142,6 +142,29 @@ p {
   padding-right: 50px;
 }
 
+#header .social-links{
+  padding-right: 7%;
+}
+#header .social-links a {
+  font-size: 10px;
+  display: inline-block;
+  background: #333;
+  color: #eee;
+  line-height: 1;
+  padding: 7px 0;
+  margin-right: 8px;
+  border-radius: 50%;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  transition: 0.3s;
+}
+
+#header .social-links a:hover {
+  background: #fff;
+  color: #d32737;
+}
+
 .nav-menu,
 .nav-menu * {
   margin: 0;
@@ -433,6 +456,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+#odw .container-fluid {
+  padding-left: 8.4%;
+  padding-right: 8.4%;
+}
+
+
 
 #events{
   height:auto;
@@ -590,12 +619,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers .odd-row-info{
   text-align:left;
-  background-color: #4ab0d8;
+  background-color: #d32737;
 }
 
 #speakers .even-row-info{
   text-align:left;
-  background-color: #d32737;
+  background-color: #4ab0d8;
 }
 
 
@@ -663,7 +692,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* FIRST EVEN ROW */
 
 #speakers .first-even-row-info{
-  background-color: #d32737;
+  background-color: #4ab0d8;
 }
 
 .first-even-row-info .line{
@@ -798,6 +827,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .wp{
   display: block;
 }
+
 #timer .row{
   margin: 0%;
   padding:0%;
@@ -810,9 +840,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #timer .parent-block{
-  position:relative;
+  position :relative;
   height:300px;
   width:100%;
+
 }
 #timer .child-one{
   position: absolute;
@@ -1072,14 +1103,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 	display:inline;
 }
 
-@media (max-width:991px){
+@media (max-width: 400px){
+  #timer .countdown{
+    padding-left:6.5%;
+  }
+}
+
+@media (max-width:992px){
   
   #timer .tab-head-text{
     padding-left:8.4%;
-  }
-
-  #timer .countdown{
-    padding-left:7%;
   }
 
   #theme-body .vetu{
@@ -1090,6 +1123,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 @media (max-width:1250px){
+  #header #logo #odw_logo img {
+    width: auto;
+    height: 45px;
+  }
+
   #header{
     position: fixed;
     height:95px;
@@ -1197,7 +1235,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: #d32737;
   
     padding: 10px 0;
-    height: 75px;
+    height: 110px;
     transition: all 0.5s ease;
   }
   #header #logo{
@@ -1241,7 +1279,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (max-width:993px)
+@media (max-width:991px)
 {
   #speakers table colgroup .big-first-col{
     width:85%;
@@ -1317,7 +1355,29 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
-@media (min-width:768px) and (max-width:991px){
+@media (min-width:990px) and (max-width:992px){
+  #timer .col-lg-5{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 41.6%;
+    max-width: 41.6%;
+  }
+
+  #timer .col-lg-7{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 58.3%;
+    max-width: 58.3%;
+    
+  }
+
+  #timer .countdown {
+    padding-left: 1%;
+}
+
+}
+
+@media (min-width:768px) and (max-width:990px){
   #timer .tab{
       height:150px;
       width:100%
@@ -1326,6 +1386,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     height:150px;
   }
   
+}
+
+@media (min-width:420px) and (max-width:427px){
+
+  #timer .col{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
 }
 
 @media (min-width:425px) and (max-width:768px)
