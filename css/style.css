@@ -1151,6 +1151,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     flex: 50%;
     max-width: 50%;
   }
+  #header .social-links {
+    padding-left:55%;
+}	
 }
 
 @media (max-width:400px){
@@ -1249,6 +1252,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   #header .social-links{
     padding-right: 0%;
+    padding-left: 40%;
   }
   #nav-menu-container{
     display: none !important;
