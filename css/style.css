@@ -125,8 +125,9 @@ p {
   padding-right: 50px;
 }
 #header .social-links{
-  padding-right: 7%;
-  padding-bottom:0px;
+  padding-right: 2%;
+  padding-left: 15%;
+  padding-bottom: 0px;
 }
 #header .social-links a {
   font-size: 10px;
@@ -144,8 +145,8 @@ p {
 }
 
 #header .social-links a:hover {
-  background: #fff;
-  color: #d32737;
+  background: #333;
+  color: #fff;
 }
 
 .nav-menu,
@@ -1093,17 +1094,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
+@media (min-width:1250px){
+#header .social-links {
+    padding-right: 7%;
+}	
+}
+
 
 @media (max-width:1250px){
   #header{
     position: fixed;
-    height:95px;
+    height:120px;
     padding-top: 4%;
   }
   #header.header-scrolled{
     background: #d32737;
     padding-top: 4%;
-    height: 95px;
+    height: 120px;
     transition: all 0.5s ease;
   }
   #header #logo{
@@ -1120,8 +1127,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: none !important;
   }
   #mobile-nav-toggle{
-    top: 2.5%;
-    left: 4%;
+    top: 2%;
+    left: 7.5%;
     font-size: 2rem;
     display: inline;
   }
@@ -1147,6 +1154,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width:400px){
+  .button{
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
   #eve .text{
     font-size: 20px;
   }
