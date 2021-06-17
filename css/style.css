@@ -548,6 +548,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   object-fit: fill;
 } */
 
+
 #speakers table{
   width:100%;
   height:380px;
@@ -582,6 +583,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #speakers .col{
   padding:0%;
   height: 380px;
+}
+
+.asterisk{
+  font-weight: bold;
+  letter-spacing: 0.2px;
 }
 
 #speakers .odd-row-info{
@@ -627,9 +633,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-left:17.6%;
 }
 
+.odd-row-info .asterisk{
+  padding-left: 14.08%;
+  bottom:30px;
+}
+
 .even-row-info p{
   color:white;
   padding-right:17.6%;
+}
+
+.even-row-info .asterisk{
+  bottom:30px;
 }
 
 /* FIRST ODD ROW */
@@ -655,6 +670,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-left: 25%; 
   
 }
+
+.first-odd-row-info .asterisk{
+  padding-left: 20%;
+  bottom:30px;
+}
+
+
 
 /* FIRST EVEN ROW */
 
@@ -1294,6 +1316,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+
 @media (max-width:993px)
 {
   #speakers table colgroup .big-first-col{
@@ -1305,6 +1328,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   .first-odd-row-info .heading{
     padding-left: 17.255%; 
+  }
+
+  .first-odd-row-info .asterisk{
+    padding-left: 13.804%;
+    bottom:20px;
+  }
+
+  .odd-row-info .asterisk{
+    padding-left: 13.804%;
+    bottom:20px;
+  }
+
+  .even-row-info .asterisk{
+    bottom:20px;
   }
   
   .first-odd-row-info p{
@@ -1319,7 +1356,33 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media (max-width: 400px)
+{
+  .first-odd-row-info,.odd-row-info .asterisk{
+    padding-left: 13.804%;
+    bottom: 6px;
+  }
+
+  .even-row-info .asterisk{
+    bottom:6px;
+  }
+
+}
+
+@media (min-width: 580px){
+  .asterisk{
+    font-size: 12px;
+  }
+}
+
+
+
 @media (max-width:580px){
+
+  .asterisk{
+    font-size: 9px;
+  }
+
   #first2{
     font-size: 12px;
     font-weight: bold;
