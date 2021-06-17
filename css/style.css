@@ -12,6 +12,10 @@ a {
   padding-left:8.4%;
   padding-right:8.4%;
 }
+#theme-body .container-fluid .row img{
+  height:500px;
+  object-fit: cover;
+}
 #theme-body .text-inside-list{
   font-size: 12px;
 }
@@ -704,6 +708,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: auto;
   background-color: #4ab0d8;
 }
+#spons .place{
+  max-width: 200px;
+  height: auto;
+}
 
 #spe{
   line-height: 25px;
@@ -739,7 +747,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color:#ffff;
   letter-spacing: 0.8px;
   word-spacing: -1px;
-  font-size: 12px;
+  font-size: 14px;
   padding-bottom: 7%;
 }
 
@@ -1104,13 +1112,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width:1250px){
   #header{
     position: fixed;
-    height:120px;
+    height:130px;
     padding-top: 4%;
   }
   #header.header-scrolled{
     background: #d32737;
     padding-top: 4%;
-    height: 120px;
+    height: 130px;
     transition: all 0.5s ease;
   }
   #header #logo{
@@ -1263,7 +1271,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 2rem;
     display: inline;
   }
-  #theme-body img{
+  #theme- .container-fluid .row img{
     height:400px;
   }
   .column {
@@ -1366,10 +1374,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media (max-width:420px){
   #speakers table{
-    height:190px;
+    height:200px;
   }
   #speakers .col{
-    height: 190px;
+    height: 200px;
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 50%;
